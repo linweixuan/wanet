@@ -1,0 +1,323 @@
+/* ::::: file:///E:/workspace/web/%E5%85%AC%E5%8F%B8%E6%B7%BB%E5%8A%A01/index.css ::::: */
+
+* {
+	word-wrap: break-word;
+}
+body, th, td, input, select, textarea, button {
+	font: 12px/1.5em Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, dl, dt, dd, form, fieldset {
+	margin: 0pt;
+	padding: 0pt;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+}
+a {
+	color: rgb(44, 98, 158);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+caption, th {
+	text-align: left;
+}
+caption {
+	font-size: 14px;
+	font-weight: bold;
+}
+caption p {
+	font-weight: normal;
+}
+body {
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+#wrap, .wrap {
+	width: 700px;
+	margin-top: 20pt;
+	margin-right: auto;
+	margin-bottom: 0pt;
+	margin-left: auto;
+	float: left;
+	padding-left: 20px;
+}
+.field, select {
+	padding: 3px 2px;
+	border: 1px solid rgb(221, 221, 221);
+	line-height: 16px;
+}
+.submit {
+	padding: 0pt 5px;
+	height: 24px;
+	border: medium none;
+	background: none repeat scroll 0% 0% rgb(255, 137, 1);
+	color: rgb(255, 255, 255);
+	line-height: 20px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.formtable {
+	width: 100%;
+}
+.formtable caption {
+	padding: 10px 0pt;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+}
+.formtable caption h2 {
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+}
+.formtable caption p {
+	margin-top: 8px;
+}
+.formtable td, .formtable th {
+	padding: 5px;
+}
+.formtable th {
+	padding-right: 1em;
+	text-align: right;
+}
+
+a {
+	color: rgb(59, 89, 152);
+}
+.submit {
+	padding: 0pt 5px;
+	height: 24px;
+	border: medium none;
+	background: none repeat scroll 0% 0% rgb(153, 197, 33);
+	color: rgb(255, 255, 255);
+	line-height: 20px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#wrap h2 {
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	padding-bottom: 8px;
+	margin-left: 0px;
+}
+#header {
+	border-top: 1px solid rgb(235, 230, 201);
+	color: rgb(51, 51, 51);
+	text-align: center;
+	padding-top: 5px;
+	padding-right: 0pt;
+	padding-bottom: 5px;
+	padding-left: 0pt;
+}
+#header p {
+	color: #666666;
+	font-size: 12px;
+	font-weight:normal;
+	text-align:left;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+#footer {
+	padding: 10px 0pt;
+	border-top: 1px solid rgb(235, 230, 201);
+	color: rgb(51, 51, 51);
+	text-align: center;
+}
+#footer a {
+	color: rgb(51, 51, 51);
+}
+
+.billbox {
+	width: 800px;
+	padding: 5px 0pt 0px;
+	margin: 0pt auto;
+	overflow: hidden;
+}
+
+
+
+.protab {
+	font-size: 12px;
+	line-height: 21px;
+	border-collapse: collapse;
+	text-align: left;
+	clear: both;
+	table-layout:fixed;
+	width:700px;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+.protab td {
+	border: 1px solid rgb(194, 217, 242) ! important;
+	padding-left: 10px;
+}
+.protab td.bgs {
+	background: none repeat scroll 0% 0% rgb(247, 249, 255);
+	width: 40%;
+}
+.protab td.biaoti {
+	background: none repeat scroll 0% 0% rgb(230, 240, 251);
+	color: rgb(31, 58, 135);
+}
+.protab a:link, .protab a:visited {
+	text-decoration: underline;
+	color: rgb(31, 58, 135);
+}
+.protab a:hover, .protab a:active {
+	text-decoration: none;
+	color: rgb(31, 58, 135);
+}
+
+.protab caption {
+	padding: 10px 0pt;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+}
+.protab caption h2 {
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+}
+.protab caption p {
+	margin-top: 8px;
+}
+
+.sales {
+	border: 1px solid rgb(235, 230, 201);
+	color: rgb(51, 51, 51);
+	text-align: center;
+	margin-left: 50px;
+	padding-top: 20px;
+	padding-right: 0pt;
+	padding-bottom: 5px;
+	padding-left: 0pt;
+	margin-bottom: 50px;
+	background-color: #FCFCFC;
+	margin-right: 25px;
+	width: 820px;
+	margin-top: 20px;
+	height: 500px;
+}
+
+.sales h2{
+	color: #333333;
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+
+.headtab {
+	margin-bottom: 10px;
+}
+
+.headtab td {
+	text-align:left;
+}
+
+.headtab th {
+	text-align: right;
+}
+
+.headtab th.title {
+	color: #1F3A87;
+	font-weight:bolder;
+}
+
+.editbox {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CBCBCB;
+	border-right-color: #CBCBCB;
+	border-bottom-color: #CBCBCB;
+	border-left-color: #CBCBCB;
+	background-color: #FCFCFC;
+	padding-left: 10px;
+	height:27px;
+}
+
+.editbox input{
+    border: 0px solid #BBBBBB;
+	background-color: #FCFCFC;
+    padding-top: 8px;
+	width: 90%;
+}
+
+.w400 {
+	width: 350px;
+}
+
+
+.editbox1 {
+	background-color: #FCFCFC;
+	padding-left: 0px;
+	height:27px;
+	border: 0px none #CBCBCB;
+}
+
+.editbox1 input{
+	border: 0px solid #BBBBBB;
+	background-color: #FCFCFC;
+	padding-top: 0px;
+	width: 100%;
+	height: 100%
+}
+
+
+.billfoot {
+	width:744px;
+	height:5px;
+	padding: 0px 0pt 20px;
+	float: left;
+	margin: 0pt auto;
+	overflow: hidden;
+	background: none repeat scroll 0 0 #F7F9FF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #E6F0FB;
+	border-right-color: #A9CBF1;
+	border-bottom-color: #A9CBF1;
+	border-left-color: #A9CBF1;
+}
+
+.billfoot .sum{
+	line-height: 20px;
+	font-size:12px;
+	font-weight:bold;
+	color:#CA0000;
+; 	padding-left: 480px;
+}
+
+
+.billbutton {
+	width:744px;
+	height:10px;
+	padding: 20px 0pt 20px;
+	float: left;
+	margin: 0pt auto;
+	overflow: hidden;
+}
+
+.billbutton .apply{
+	line-height: 20px;
+	font-size:12px;
+	font-weight:bold;
+	color:#CA0000;
+; 	padding-left: 480px;
+}
+
+.tips {
+	color:#FF0606;
+}

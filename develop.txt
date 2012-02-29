@@ -1,0 +1,228 @@
+Task:
+
+http://cn2.php.net/manual/zh/function.date.php
+
+1. 每单写入 bill表, 然后写sale表每个销售部件, sale命名可能有些不妥, 因为销售用到, 而且入单也用到了.
+  表明sales容易理解错误.
+  
+2. 销售流程 sale.php 点击提交按钮 --> wanet.sales.js --> lib/sales_post.php
+    function get_sales_input() {
+      $.post(
+        "lib/sales_post.php",
+    }
+  
+    $sale = new Sales;
+    $post['inout'] = '0';  /*sale=0,buy=1*/
+    $sale->save($post);
+    这里有点奇怪, 现在sale.php先调用, 而不是bill.php中
+    
+    
+    销售单的修改流程
+    1. 如果销售单要修改, 网页上有该销售单的id传递到后台, 新单是没有该销售单的id,后台根据这个判断是否新的销售单.
+    2. 修改先更新bill表的id行记录,更改销售单id.
+    3. 更新bill表记录的同时将, sales表的该bill的id所有记录更新historty字段+1, 由history($bill)函数完成
+    4. 因为要修改销售单, parts的库存表, 先要恢复到销售前的数量, 即将上面history的记录的部件数目加回parts表.
+       然后再往sale插入新的修改记录.
+       
+    5 向sale表插入新销售的部件时候,检查part表的部件数量, 是否足够, 不足够则提示.
+    
+3. 关于company搜索, 是通过wanet.taiho.js-->company_search.php. 
+   现在要求搜索不单是, q=? 一个字段, 因为部件搜索,不单搜索部件id的名称, 同时要搜索该公司的销售过的部件历史
+   要修改jquery.autocomplete.js
+   
+   jquery.autocomplete.js:
+   
+    $.Autocompleter = function(input, options) {
+
+        var KEY = {
+            UP: 38,
+            DOWN: 40,
+            DEL: 46,
+            TAB: 9,
+            RETURN: 13,
+            ESC: 27,
+            COMMA: 188,
+            PAGEUP: 33,
+            PAGEDOWN: 34,
+            BACKSPACE: 8
+        };
+
+        // Create $ object for input element
+        var $input = $(input).attr("autocomplete", "off").addClass(options.inputClass);
+        
+        // Extend for the search query
+        var id;  <------- 添加一个变量id, 使用来查询的id赋值, 传递到下面的k
+    
+	function request(term, success, failure) {
+		if (!options.matchCase)
+			term = term.toLowerCase();
+		var data = cache.load(term);
+		// recieve the cached data
+		if (data && data.length) {
+			success(term, data);
+		// if an AJAX url has been supplied, try loading the data now
+		} else if( (typeof options.url == "string") && (options.url.length > 0) ){
+			
+			var extraParams = {
+				timestamp: +new Date()
+			};
+			$.each(options.extraParams, function(key, param) {
+				extraParams[key] = typeof param == "function" ? param() : param;
+			});
+			
+			$.ajax({
+				// try to leverage ajaxQueue plugin to abort previous requests
+				mode: "abort",
+				// limit abortion to this input
+				port: "autocomplete" + input.name,
+				dataType: options.dataType,
+				url: options.url,
+				data: $.extend({
+					q: lastWord(term),
+                    k: 'test',            <------------ 我们添加一个字段, 传递多一个关键信息
+					limit: options.max
+				}, extraParams),
+				success: function(data) {
+					var parsed = options.parse && options.parse(data) || parse(data);
+					cache.add(term, parsed);
+					success(term, parsed);
+				}
+			});
+		} else {
+			// if we have a failure, we need to empty the list -- this prevents the the [TAB] key from selecting the last successful match
+			select.emptyList();
+			failure(term);
+		}
+	};
+    
+4  bill表添加了history字段, 下一步应该修改更新的bill记录的历史记录    
+
+
+6. 事务处理Transaction和DB的关系, 事务依赖在db的内部变量result, 来判断上次执行的sql是否成功.
+    当前db所用的是全局变量, 这会导致多用户的时候出现问题.
+    
+    处理方法:  将DB在包一层WJDB { result} , 包含一个result成员, 内部使用单个db实例, 每次执行sql
+                将执行result放入WJDB中,使得每个sql执行的result放入db包裹类中.
+                
+    GLOBALDB() {
+       当前sid --> 对应一个db
+       应该有一个map池.
+    }    
+    Transaction {    
+      通过sid --> 获取db实例, db中有自己的result
+    }
+    
+7. 关于页面tab, 文件在表格grid目录下, 常用的页面会以tab方式打开, 选择其中一行, 传递id值
+   access.tbl.js 中药指定要tab弹出的php页面,
+   
+   jQuery("#tblobj").jqGrid({
+    .....
+    ondblClickRow: function(rowid) {
+        //$(this).jqGrid('editGridRow', rowid);        
+        window.parent.load_idtab_page('用户权限', './user/access.php',rowid);
+        //window.parent.add_company_tab(rowid);
+    }
+    
+    转入tab的处理, 桶父亲的iframe加载php页面, id也传递进入
+    function load_idtab_page(name,page,id)
+    {   
+         var url = page;
+         if (typeof(id) != "undefined") {
+            url = page + "?id=" + id;
+         }
+         
+         $('#tab').show();
+         tabpanel.kill(name);
+         tabpanel.addTab({id: name,
+            title: name,
+            html:'<iframe name="ifrm" id="ifrm" src="' +url+ '" scrolling="no"></iframe>',
+            closable: false,
+            disabled:false
+         });
+    }    
+    
+    最后id会通过access_get.php 查询相应的id的记录, access_get.php会嵌在 ./user/access.php页面头
+    
+    
+8.  各个模块的错误处理需要进一步的处理, 
+    function save($post)
+    {    
+        return $this->err();
+    }
+    
+    
+9.  预先销售价格定义, 针对不同销售客户, 销售不同价格, 
+    1. 通过录入各个公司的销售价格形成的历史价格来获取销售价格,但是零售客户不可能需要每个部件的
+    2. 先对特定的客户先定义销售价格, 这样必须要形成一个'假的' 预先销售单, 通过先对该客户的各个
+       部件定义销售价格销售单, 这个单命名为sale-price.php, 通过头部的sale-price.js脚本控制
+       提交的单据类型.
+       
+       <script type="text/javascript" src="script/wanet.sales.js"></script>  -- 原来的
+       <script type="text/javascript" src="script/wanet.sales-price.js"></script>  -- 新的
+       
+       问题是需要clone原先的sale.js, wanet.sales-price.js只改一行, 造成维护麻烦.
+       
+10. 单据的分类和区别, 
+        入货单即采购单,  最原始的部件买回来的价格, 这个价格是比较秘密的, 要级别高的人才可以查看 purchase
+        入库单, 可以通过普通员工录入, 录入的时候价格肯能是调整过的, 是同样销售价格  entry
+        预售单, 即对特定的客户销售价格预先录入的价格, 方面针对性销售, 不同客户应对不同销售价格 presale
+        销售单, 最终卖给客户的销售价格.  sale
+        
+    因此bill的类型就有必要分类. 不单纯进来出去
+    
+    
+11. 最近销售价格搜索
+    销售单part.php页面 -> wanet.taiho.js -> setPartAutoComplete();
+    
+    $key = strtolower($_GET["q"]);  
+    $id = strtolower($_GET["x"]);
+    part_search.php -> Part::instance()->search($key,$id);
+    
+    
+12. 时间date需要使用24小时制， 不然时间排序会有问题
+
+13. grid表的乱码问题，需要的‘set utf8’
+
+14. 采购单需要同时入库问题
+
+15. 查询需要查公司 + 部件 查询最近部件销售记录
+
+16. 创建表warehouse代表仓库, 现在简单分总库general和店库sub
+    warehouse表的type值为0, 表示该仓库是唯一总仓库, 其他为分仓库
+    仓库处理:
+        入总仓库,需要对part表的totals操作累加
+        入分库则,需要对part表操作
+        
+17. parts表的totals不太合理代表总库存, 理解上以为是部件的库存总数目
+    实际上是用来表示采购总库存累加数目, 并在分拨的时候减去入库数目
+    
+    
+18. 采购单第一次填好提交后并没有关闭, 然后再上面修改,再提交会生成新的单据
+    这时错误的. 处理办法将提交的id那回来嵌入页面.
+    
+19. 单据的备注目前没有处理, 这个功能在采购时候同一单要分拨其他地方时候比较
+    有用处.
+    
+20. 入库的仓库字段, 缺省入库单提交的时候, 给定了从总库general调拨->分库(店库)
+    entry单-->
+    function billsale(){
+        // salesum function will check the fields
+        if (salesum()) {
+            // 单纯保存,如总库
+            var warehouse = 'general';  <----
+            get_bill_fields(warehouse);
+        }
+    }
+    
+    这里可能有问题; 库的来源和去向,上面都是缺省 general总-> sub店
+    应该entry页面上提供两个仓库, 调拨的库(来源), 要保存的库(去向).
+    
+21. presale页面的仓库, 目前没有意义. 因为presale价格单的类型界定了.
+
+22. 销售单的仓库,目前只是针对sub(店)库.
+
+23. 单据的公司字段多出显示undefine
+
+24. 单据的价格要向公司字段一样显示最近价格记录
+
+25. 单据要显示历史修改记录

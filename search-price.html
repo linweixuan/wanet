@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="script/jquery.autocomplete.css" />
+<link rel="stylesheet" type="text/css" href="script/common.float.css" />
+<link rel="stylesheet" type="text/css" href="script/jquery.float.css" />
+<link rel="stylesheet" type="text/css" href="float.css" />
+</head>
+<body>
+<div class="zxx_out_box">
+    <div class="zxx_in_box">
+        <div class="zxx_main_con">
+			<div class="zxx_test_list">
+            	<h4 class="mb10 f11">一、加载页面上元素</h4>
+                <p><a id="trigger1" href="javascript:;" rel="targetBox">默认rel加载</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--style="display: block; position: absolute; width: 135px; top: 198px; left: 361px;" class="ac_results"-->
+<div id="p2" style="display: block; position: absolute; width: 135px; top: 198px; left: 361px;" class="ac_results">
+  <ul style="max-height: 350px; overflow: auto;">
+    <li class="ac_even"><span class="key2">2012-12-02</span><span class="key1">￥200.0</span></li>
+    <li class="ac_even"><span class="key2">2012-09-31</span><span class="key1">￥20.0</span></li>
+    <li class="ac_even"><span class="key2">2012-03-02</span><span class="key1">￥30.0</span></li>
+    <li class="ac_even"><span class="key2">2012-08-23</span><span class="key1">￥250.0</span></li>
+    <li class="ac_even"><span class="key2">2012-06-23</span><span class="key1">￥400.0</span></li>
+    <li class="ac_even"><span class="key2">2012-02-14</span><span class="key1">￥22.0</span></li>
+    <li class="ac_even"><span class="key2">2012-05-15</span><span class="key1">￥300.0</span></li>
+  </ul>
+</div>
+<div id="p1" class="shadow target_box dn">
+  <div class="psubmenu">
+    <h4></h2>                       
+    <ul> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥220.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥320.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥134.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥20.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥730.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥234.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥553.0</span></a></li> 
+      <li class="navlayer"><a href="#"><span class="rdate">2012-09-31</span><span class="lprice">￥143.0</span></a></li> 
+    </ul>
+  </div>
+</div>
+
+<script type="text/javascript" src="script/jquery-1.5.1.js"></script>
+<script type="text/javascript" src="script/jquery.float.js"></script>
+<script>
+$(function() {
+    $(".ac_even").bind('mouseover',function()
+    {
+        $(this).addClass("ac_over");
+    }).bind('mouseleave',function()
+    {
+        $(this).removeClass("ac_over");
+    });	
+    
+
+    $(".ac_even").click(function(){
+        //$("#querypart").attr("value",this.text);
+        //alert('aaaaa');
+        //$.powerFloat.hide();
+        $("#p2").hide();
+        return false;
+    });
+
+	//target参数加载
+	$("#trigger1").powerFloat({
+        width: 145,
+		target: $("#p2")	
+	});
+});
+</script>
+
+</body>
+</html>

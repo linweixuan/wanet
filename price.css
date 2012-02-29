@@ -1,0 +1,72 @@
+/* ::::: file:///E:/workspace/web/%E7%93%A6%E6%90%9C%E7%B4%A2/index.css ::::: */
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	margin: 0pt;
+	padding: 0pt;
+}
+:focus {
+	outline: 0pt none;
+}
+.form label, .form input, .form select, .form textarea, .form button, .form .label {
+	float: left;
+	font-size: 12px;
+}
+body, button, select, textarea {
+	font: 12px/1.5 'Tahoma', 'simsun';
+}
+.w {
+	width: 1024px;
+	margin: 0pt auto;
+}
+#header {
+	margin-bottom: 7px;
+}
+#search {
+	float: left;
+	width: 422px;
+	height: 29px;
+	padding: 1px 0pt 1px 1px;
+	margin: 9px 10px 0pt 0pt;
+	background: url('bg.gif') no-repeat scroll 0pt 0pt transparent;
+}
+#i-search {
+	float: left;
+	position: relative;
+	width: 346px;
+	z-index: 6;
+	font-family: arial;
+}
+#key {
+	width: 316px;
+	height: 15px;
+	padding: 8px 5px 6px 24px;
+	border: 0pt none;
+	line-height: 15px;
+	background: none repeat scroll 0% 0% transparent;
+	color: rgb(153, 153, 153);
+	font-size: 14px;
+}
+#query {
+	width: 75px;
+	height: 29px;
+	padding: 0pt;
+	margin: 0pt;
+	border: 0pt none;
+	background: none repeat scroll 0% 0% transparent;
+	cursor: pointer;
+	font-size: 14px;
+	color: rgb(153, 51, 0);
+	font-weight: bold;
+}
+* {
+	margin: 0pt;
+	padding: 0pt;
+}
+html, div, span, iframe, p, blockquote, pre, a, address, big, cite, code, font, small, strong, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend {
+	margin: 0pt;
+	padding: 0pt;
+}
+.form label, .form input, .form select, .form textarea, .form button, .form .label {
+	float: left;
+	font-size: 12px;
+}

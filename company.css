@@ -1,0 +1,137 @@
+/* ::::: http://www.wanet.cn/company.css ::::: */
+
+* {
+	word-wrap: break-word;
+}
+body, th, td, input, select, textarea, button {
+	font: 12px/1.5em Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, dl, dt, dd, form, fieldset {
+	margin: 0pt;
+	padding: 0pt;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+}
+a {
+	color: rgb(44, 98, 158);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+caption, th {
+	text-align: left;
+}
+caption {
+	font-size: 14px;
+	font-weight: bold;
+}
+caption p {
+	font-weight: normal;
+}
+body {
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+}
+#wrap, .wrap {
+	width: 700px;
+	float: left;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: 0pt;
+	margin-left: auto;
+	padding-left: 20px;
+}
+.field, select {
+	padding: 3px 2px;
+	border: 1px solid rgb(221, 221, 221);
+	line-height: 16px;
+}
+.submit {
+	padding: 0pt 5px;
+	height: 24px;
+	border: medium none;
+	background: none repeat scroll 0% 0% rgb(255, 137, 1);
+	color: rgb(255, 255, 255);
+	line-height: 20px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.formtable {
+	width: 100%;
+}
+.formtable caption {
+	padding: 10px 0pt;
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+}
+.formtable caption h2 {
+	padding-bottom: 8px;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+}
+.formtable caption p {
+	margin-top: 8px;
+}
+.formtable td, .formtable th {
+	padding: 5px;
+}
+.formtable th {
+	padding-right: 1em;
+	text-align: right;
+}
+a {
+	color: rgb(59, 89, 152);
+}
+.submit {
+	padding: 0pt 5px;
+	height: 24px;
+	border: medium none;
+	background: none repeat scroll 0% 0% rgb(153, 197, 33);
+	color: rgb(255, 255, 255);
+	line-height: 20px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+#wrap h2 {
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	padding-bottom: 8px;
+	margin-left: 0px;
+}
+
+#header {
+	border-top: 1px solid rgb(235, 230, 201);
+	color: rgb(51, 51, 51);
+	text-align: center;
+	padding-top: 5px;
+	padding-right: 0pt;
+	padding-bottom: 5px;
+	padding-left: 0pt;
+}
+#header p {
+	color: #666666;
+	font-size: 12px;
+	font-weight:normal;
+	text-align:left;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+#footer {
+	padding: 10px 0pt;
+	border-top: 1px solid rgb(235, 230, 201);
+	color: rgb(51, 51, 51);
+	text-align: center;
+}
+#footer a {
+	color: rgb(51, 51, 51);
+}
+#name, #address {
+	width: 300px;
+}
+
+.tips {
+	color:#FF0606;
+}

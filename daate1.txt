@@ -1,0 +1,68 @@
+查看文章
+		 
+php 判断日期格式是否正确
+2011-06-27 17:27
+
+<?php
+/**
+* 方法:isdate()
+* 功能:判断日期格式是否正确
+* 参数:$str 日期字符串 $format日期格式
+* 返回:布尔值
+*/
+function isdate($str,$format="Y-m-d"){
+$strArr = explode("-",$str);
+if(empty($strArr)){
+return false;
+}
+foreach($strArr as $val){
+if(strlen($val)<2){
+$val="0".$val;
+}
+$newArr[]=$val;
+}
+$str =implode("-",$newArr);
+    $unixTime=strtotime($str);
+    $checkDate= date($format,$unixTime);
+    if($checkDate==$str)
+        return true;
+    else
+        return false;
+}
+//实例
+if(isdate("2010-1-1")){
+echo "true";
+}else{
+echo "false";
+}
+
+echo"<br/>";
+
+if(isdate("asdfsdaf")){
+echo "true";
+}else{
+echo "false";
+}
+
+?>
+
+ 
+
+ 
+
+ //第二个函数判断是否满足 Y-m-d H:i:s 的格式
+
+function isdate2($str,$format="Y-m-d H:i:s"){
+ $strArr = explode(" ",$str);
+ if(empty($strArr)){
+  return false;
+ }
+ 
+  if(!isdate($strArr[0]))return false;
+ $strArr2=explode(":",$strArr[1]);
+  if(empty($strArr2)){
+  return false;
+  }
+ if(count($strArr2)==3)return true;
+ else false;
+} 

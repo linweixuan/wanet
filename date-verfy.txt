@@ -1,0 +1,49 @@
+验证日期格式的JAVAscript函数(转)
+<script type="text/javascript" language="JavaScript">
+<!--
+// more javascript from http://www.smallrain.net
+
+function dateCheck(str){
+var re = new RegExp("^([0-9]{1,2})[./]{1}([0-9]{1,2})[./]{1}([0-9]{4})$");
+var ar;
+var res = true;
+
+if ((ar = re.exec(str)) != null){
+var i;
+i = parseFloat(ar[1]);
+// verify dd
+if (i <= 0 || i > 31){
+res = false;
+}
+i = parseFloat(ar[2]);
+// verify mm
+if (i <= 0 || i > 12){
+res = false;
+}
+}else{
+res = false;
+}
+
+if (!res){
+alert('请输入 DD/MM/YYYY 日期格式');
+}
+return res;
+}
+// -->
+</script>
+
+使用例子：
+<form name="datecheck" method="POST" onsubmit="return dateCheck(this.date.value);">
+<table border="0" cellpadding="8" cellspacing="0" width="50%">
+<tr>
+<td align="right" nowrap>Birth Date (DD/MM/YYYY):</td>
+<td><input type=text name="date" size="25"></td>
+</tr>
+<tr>
+<td class="center" colspan="2">
+<input type=submit value="发送">
+<input type=reset value="重写">
+</td>
+</tr>
+</table>
+</form>
