@@ -1,0 +1,60 @@
+/* ::::: file:///E:/workspace/wanet/temp/%E7%82%B9%E7%99%BB%E9%99%86/index.css ::::: */
+
+body { background: none repeat scroll 0% 0% rgb(255, 255, 255); line-height: 160%; font-size: 12px; text-align: center; }
+body, input, select, button { font-family: verdana,sans-serif; }
+h1, h2, h3, h4, h5, h6, select, input, textarea, button { font-size: 100%; }
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, form, p, dl, dt, dd, table, th, td, img, blockquote, fieldset { margin: 0pt; padding: 0pt; border: 0pt none; }
+legend { display: none; }
+input, button, textarea, img { line-height: normal; }
+abbr, acronym, address, cite, q, em, code, var, dfn, ins { font-style: normal; text-decoration: none; border: 0pt none; }
+ul, ol { list-style: none outside none; }
+table { border-collapse: collapse; border-spacing: 0pt; }
+select, input, label, button, button img { vertical-align: middle; }
+.ipt-c { margin-left: 0px; }
+.page, .header, .content, .footer { margin: auto; }
+.page-126 a { color: rgb(14, 116, 69); }
+.page-126 .bg { background-image: url('126_bg.png'); background-repeat: no-repeat; }
+.page-126 .main { background-image: url('126_bgx.jpg'); }
+.header {
+	height: 80px;
+	border-bottom: 1px solid rgb(210, 210, 210);
+	width: 800px;
+	text-align: left;
+	padding-top: 60px;
+}
+.header .logo { margin-top: 15px; float: left; }
+.header .ext-link {
+	float: right;
+	margin-top: 60px;
+	color: rgb(156, 156, 156);
+	margin-left: 8px;
+}
+.main { height: 435px; width: 800px; margin: 0px auto; text-align: left; background-repeat: repeat-x; position: relative; }
+.main h2 { display: block; width: 360px; height: 60px; background-color: rgb(255, 253, 230); border: 1px solid rgb(236, 236, 236); overflow: hidden; line-height: 60px; white-space: nowrap; text-indent: 63px; color: rgb(0, 0, 0); font-size: 16px; background-position: -325px 13px; margin-left: 8px; margin-top: 77px; float: left; }
+.main .maybe { width: 355px; height: auto; font-size: 12px; position: absolute; top: 160px; line-height: 180%; left: 30px; word-wrap: break-word; }
+.main .maybe ol {  }
+.main .maybe li { position: relative; margin: 13px 0px 0px 20px; }
+.main .maybe li em { position: absolute; left: -20px; top: 0px; }
+.Larea { width: 377px; height: 319px; background-position: 0px -113px; position: absolute; right: 25px; top: 47px; }
+.Larea h1 { display: block; width: 290px; height: 40px; margin-top: 24px; margin-left: 26px; white-space: nowrap; text-indent: 400px; overflow: hidden; }
+.Larea .err { color: rgb(221, 32, 38); text-align: left; position: absolute; left: 80px; top: 65px; }
+.table-main { margin: 20px 0pt; }
+.table-main th { font-weight: normal; width: 75px; text-align: right; padding-right: 7px; }
+.table-main td { width: 285px; padding: 7px 0px; }
+.table-main td .ipt { width: 180px; padding: 4px 3px; font-size: 14px; font-weight: bold; border: 1px solid rgb(108, 145, 172); background-color: rgb(255, 255, 255); }
+.table-main td strong { font-size: 14px; }
+.table-main td select { font-size: 14px; width: 188px; text-align: left; }
+.table-main td .AWauto { -moz-box-align: center; display: inline-block; vertical-align: middle; width: 16px; height: 14px; overflow: hidden; background-position: -109px -1px; margin-right: 10px; }
+.table-main td .btn { width: 84px; height: 31px; background-position: 0px 0px; color: rgb(255, 255, 255); cursor: pointer; border: 0px none; padding: 2px 0pt 0pt; font-size: 14px; font-weight: bold; }
+.footer { height: 45px; line-height: 45px; color: rgb(176, 176, 176); }
+.footer a { color: rgb(152, 152, 152); text-decoration: none; margin: 0px 3px; }
+.footer a:hover { text-decoration: underline; }
+.page-126 .table-main td .btn { width: 90px; color: rgb(0, 0, 0); }
+
+.left_pic{
+	float: left;
+	width: 200px;
+	margin-top: 50px;
+	margin-right: 10px;
+	margin-left: 100px;
+}
