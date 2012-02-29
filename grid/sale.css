@@ -1,0 +1,47 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0pt;
+	margin: 0pt;
+}
+
+#wrap, .wrap {
+	width: 740px;
+	float: left;
+	margin-top: 3pt;
+	margin-right: auto;
+	margin-bottom: 0pt;
+	margin-left: auto;
+	padding-left: 5px;
+}
+
+
+.history {
+	font-size: 14px;
+	width: 750px;
+	margin-top: 20px;
+	padding-top: 0pt;
+	padding-right: 10px;
+	padding-bottom: 0pt;
+	padding-right: 10px;
+	float: left;
+}
+.history .icon {
+	width: 110px;
+	float: left;
+	margin-left: 20px;
+}
+.history .content { 
+	width: 750px;
+	
+}
+.history .year-nav {
+	padding-top: 25px;
+	padding-bottom: 30px;
+	font-family: Trebuchet MS;
+	font-size: 11px;
+	background: url('images/bar_year.jpg') no-repeat scroll 0pt 0pt rgb(255, 255, 255);
+	float: left;
+}
+.history #fixedY { position: absolute; left: -999px; }
+.history .year-nav a { padding-bottom: 2px; margin-right: 13px; text-decoration: none; color: rgb(136, 136, 136); border-bottom: 3px solid rgb(204, 204, 204); }
+.history .year-nav a:hover { text-decoration: none; color: rgb(136, 136, 136); border-bottom: 3px solid rgb(29, 55, 129); }
+.history .year-nav a.active { margin-right: 10pt; text-decoration: none; color: rgb(136, 136, 136); border-bottom: 3px solid rgb(247, 188, 14); }
