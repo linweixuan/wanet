@@ -1,0 +1,189 @@
+html {
+	/*background-color: rgb(229, 230, 230);*/
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin: 0pt;
+	padding: 0pt;
+}
+fieldset, img {
+	border: 0pt none;
+}
+ul li {
+	list-style: none outside none;
+}
+li {
+	list-style-position: outside;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+body {
+	font: 13px/1.231 arial, helvetica, clean, sans-serif;
+}
+.body:after, .line:after, .columnRight:after, .unitLast:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0pt ! important;
+	line-height: 0;
+	font-size: xx-large;
+}
+
+.main, .column, .unit, .unitLeft, .left {
+	float: left;
+}
+.size1of2 {
+	width: 200px;
+}
+.columnRight, .unitLast {
+	display: table-cell;
+	float: none;
+	width: 200px;
+}
+
+.module {
+	margin: 0pt;
+}
+.bd, .ft, .hd {
+}
+.inner:after, .hd:after, .bd:after, .ft:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0pt ! important;
+	line-height: 0;
+	font-size: xx-large;
+}
+.inner {
+	position: relative;
+}
+.module {
+	margin-bottom: 10px;
+}
+.inner {
+	background-color: rgb(255, 255, 255);
+	padding: 15px 20px;
+}
+.hd {
+	padding-bottom: 10px;
+	border-bottom: 2px solid rgb(204, 204, 204);
+	margin-bottom: 10px;
+}
+.hd h2 {
+	font-size: 19px;
+	line-height: 19px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.media {
+	width: 65px;
+	height: 65px;
+}
+.media:after, .bd:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+	height: 0pt ! important;
+	line-height: 0;
+	font-size: xx-large;
+}
+.media .bd {
+	display: table-cell;
+}
+.media .bd > :first-child {
+	margin-top: 0pt;
+}
+.media .bd > :last-child {
+	margin-bottom: 0pt;
+}
+.media .img {
+	float: left;
+	margin-right: 10px;
+}
+.media .img img {
+	display: block;
+}
+.mediaVertical {
+	display: table;
+	width: 1px;
+}
+.mediaVertical .img {
+	float: none;
+	margin-right: 0pt;
+}
+.mediaVertical .bd {
+	margin-top: 5px;
+	display: block;
+}
+.mediaVertical > .bd:first-child {
+	margin-top: 0pt;
+}
+body {
+	font-size: 12px;
+}
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+strong, .bold {
+	font-weight: bold;
+}
+ol > :first-child, ul > :first-child {
+	margin-top: 0pt;
+}
+ol > :last-child, ul > :last-child {
+	margin-bottom: 0pt;
+}
+.textCenter {
+	text-align: center;
+}
+.center {
+	margin: 0pt auto;
+}
+body {
+	color: rgb(51, 51, 51);
+}
+a:link, a:visited, a:active, a:hover {
+	color: rgb(0, 82, 136);
+}
+h2 {
+	font-size: 19px;
+	color: rgb(255, 156, 68);
+	font-weight: bold;
+}
+.marginTop2 {
+	margin-top: 50px;
+}
+.marginRight3 {
+	margin-right: 5px;
+}
+.marginLeft3 {
+	margin-left: 5px;
+}
+.marginClearBottom {
+	margin-bottom: 0pt ! important;
+	width: 650px;
+}
+.image3 {
+	width: 100px;
+	height: 60px;
+}
+
+.bd{
+   background: url("#") repeat-x scroll 0 0 white;
+}
+
+.menuname {
+	width: 90px;
+	margin-top: 2px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
