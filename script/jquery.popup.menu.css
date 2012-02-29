@@ -1,0 +1,50 @@
+.jqpopupmenu, .jqpopupmenu ul{ 
+margin: 0;
+padding: 0;
+position: absolute;
+left: 0;
+top: 0;
+list-style-type: none;
+background: white;
+border: 1px solid #C1E0FF;
+visibility: hidden;
+display: none; /*collapse all sub menus to begin with*/
+box-shadow: 3px 3px 8px #818181; /*shadow for CSS3 capable browsers.*/
+-webkit-box-shadow: 3px 3px 8px #818181;
+-moz-box-shadow: 3px 3px 8px #818181;
+}
+
+
+.jqpopupmenu li{
+position: relative;
+background: url("../images/dot1.gif") no-repeat scroll left 11px transparent;
+list-style: none outside none;
+}
+
+.jqpopupmenu li a{
+	display: block;
+	width: 120px; /*width of menu (not including side paddings)*/
+	color: black;
+	background: #F5F5F5;
+	text-decoration: none;
+	padding-top: 4px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 15px;
+}
+
+* html .jqpopupmenu li{ /*IE6 CSS hack*/
+display: inline-block;
+width: 170px; /*width of menu (include side paddings of LI A*/
+}
+
+.jqpopupmenu li a:hover, .jqpopupmenu li.selected>a{
+	background-color: #FDBE02;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+

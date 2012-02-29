@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery</title>
+<link rel="stylesheet" href="common.float.css" type="text/css" />
+<link rel="stylesheet" href="jquery.float.css" type="text/css" />
+<style>
+.shadow{-moz-box-shadow:1px 1px 3px rgba(0,0,0,.4); -webkit-box-shadow:1px 1px 3px rgba(0,0,0,.4); box-shadow:1px 1px 3px rgba(0,0,0,.4);}
+.target_box{width:250px; padding:10px; border:1px solid #aaa; background-color:#fff;}
+.target_list{padding:4px; border-bottom:1px dotted #ddd; overflow:hidden; _zoom:1;}
+.target_list a{width:22px; line-height:20px; margin-right:5px; padding:1px; color:#333; font-size:12px; text-align:center; text-decoration:none; float:left;}
+.target_list a:hover{padding:0; border:1px solid #ddd; color:#cd0000;}
+.target_more{margin-top:-20px;}
+
+</style>
+</head>
+<body>
+<div class="zxx_out_box">
+    <div class="zxx_in_box">
+        <div class="zxx_main_con">
+			<div class="zxx_test_list">
+            	<h4 class="mb10 f11">一、加载页面上元素</h4>
+                <p><a id="trigger1" href="javascript:;" rel="targetBox">默认rel加载</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="targetBox" class="shadow target_box dn">
+	<div class="target_list">
+    	<a href="javascript:;">1</a>
+        <a href="javascript:;">2</a>
+        <a href="javascript:;">3</a>
+        <a href="javascript:;">4</a>
+        <a href="javascript:;">5</a>
+        <a href="javascript:;">6</a>
+        <a href="javascript:;">7</a>
+        <a href="javascript:;">8</a>
+    </div>
+    <div class="target_list">
+    	<a href="javascript:;">9</a>
+        <a href="javascript:;">10</a>
+        <a href="javascript:;">11</a>
+        <a href="javascript:;">12</a>
+        <a href="javascript:;">13</a>
+        <a href="javascript:;">14</a>
+        <a href="javascript:;">15</a>
+        <a href="javascript:;">16</a>
+    </div>
+    <div class="target_list" style="border-bottom:0;">
+        <a href="javascript:;">17</a>
+        <a href="javascript:;">18</a>
+        <a href="javascript:;">19</a>
+        <a href="javascript:;">20</a>
+    </div>
+    <a href="##" class="r mr5 target_more">显示更多 »</a>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.float.js"></script>
+<script>
+$(function() {
+	//通过默认rel属性加载
+	$("#trigger1").powerFloat();
+	//target参数加载
+	$("#trigger2").powerFloat({
+		target: $("#targetBox")	
+	});
+});
+</script>
+
+
+</body>
+</html>
