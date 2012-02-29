@@ -26,6 +26,7 @@ function formatResult(row) {
 	return row[0].replace(/(<.+?>)/gi, '');
 }
 
+
 function setPartAutoComplete() {
 	var tbl = $(".protab");
 	var trlist = tbl.find("tr");
@@ -100,6 +101,96 @@ function setCompanyAutoComplete() {
 	});
 }
 
+function setPriceAutoShowHistory() {
+	var tbl = $(".protab");
+	var trlist = tbl.find("tr");
+	
+	for (var i = 1; i < trlist.length; i++) {
+		var tr = $(trlist[i]);
+		var inputs = tr.find("INPUT[type='text']");
+        
+        $(inputs[5]).bind('dblclick',function() {
+            // get this input  part id number
+            var tr = $(this).parent().parent().parent();
+            var inputs = tr.find("INPUT[type='text']");
+            var partid = $.trim($(inputs[0]).val());
+            if (partid == '') return;
+            
+            // get this bill's compnay id number
+            var companyid = trim($("#companyid").val());
+            if (companyid == '') return;
+            
+            // get the company and partid' price
+            get_history_prices(partid,companyid,this);
+            
+            // show price pop menu
+            $(this).powerFloat({
+                eventType: null,
+                width: 145,
+                target: $("#mprice")
+            });
+        });
+    }
+}
+
+function get_history_prices(partid, companyid, input) {
+    ajax_swap(); 
+    $.post(
+        "lib/prices_get.php",
+        { part: partid, company: companyid }, 
+        function(resp, state){
+            if(state == "success") {
+                build_prices_popmenu(resp,input);
+            }
+        },
+        "json"
+    );
+    ajax_swap();
+    return;
+}
+
+function build_prices_popmenu(prices,input) {
+    var menu = '';
+    
+    if( typeof(prices) == "undefined" ) 
+        return;
+    if( $.trim(prices) == "" )
+        return;
+    if( prices.length == 0)
+        return;
+    
+    for(var i=0, l=prices.length; i<l; i++) {
+        menu += '<li class="ac_even"><span class="key1">' 
+        +prices[i].price+ '</span><span class="key2">' 
+        +prices[i].date+ '</span></li>';
+    }
+    
+    $("#mprice ul").empty();
+    $("#mprice ul").html(menu);
+    
+    $(".ac_even").bind('mouseover',function() {
+        $(this).addClass("ac_over");
+    }).bind('mouseleave',function()
+    {
+        $(this).removeClass("ac_over");
+    });	
+    
+    $(".ac_even").click(function(){
+        var price = $(this).find(".key1");
+        //alert($(price).html());        
+        var str = $(price).html();
+        str = str.substring(1);
+        $(input).attr("value",str);
+        $("#mprice").hide();
+        return false;
+    });
+    
+    $("#mprice").bind('mouseleave',function() {
+        $(this).hide();
+    });
+    return;
+}
+
 $().ready(function () {
 
 	// set comany name auto complete
@@ -107,6 +198,9 @@ $().ready(function () {
     
     // set part name auto complete
 	setPartAutoComplete();
+    
+    // set part price auto show
+    setPriceAutoShowHistory();
     
 	$(":text, textarea").result(log).next().click(function () {
 		$(this).prev().search();

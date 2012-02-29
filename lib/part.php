@@ -482,12 +482,13 @@ class Part
     //    
     function get_sale_price($company, $part)
     {
-        $db = GLOBALDB();
-        $sql = ' select price from sales'. 
-               ' where part = '.$part.' and company = '.$company.' and type<> 1'.
-               ' order by date desc limit 0,1';
-            
         $price = '';
+        $db = GLOBALDB();
+        
+        $sql = ' select price from sales'. 
+               ' where part = '.$part.' and company = '.$company.' and (type=0 or type=2)'.
+               ' order by date desc limit 0,1';
+                    
         if ($result = $db->query($sql)) {
             $rows = mysql_num_rows($result);
             if ($rows) {
@@ -496,7 +497,39 @@ class Part
             }
             mysql_free_result($result);
         }
+        
         return $price; 
+    }
+    
+    function get_sale_prices($company, $part)
+    {
+        if ( $part == null || !strlen($part) ||
+             $company == null || !strlen($company) ) {
+            return '';
+        }
+        
+        $db = GLOBALDB();
+        $sql = ' select price, DATE_FORMAT(date,"%Y-%m-%d") as date from sales'. 
+               ' where part = '.$part.' and company = '.$company.' and (type=0 or type=2)'.
+               ' order by date desc limit 0,5';
+            
+        $prices = array();
+        if ($result = $db->query($sql)) {
+            $rows = mysql_num_rows($result);
+            while($rows) {
+                $row = mysql_fetch_assoc($result);
+                $item = array(
+	                'price' => '￥'.$row['price'],
+	                'date' => $row['date'],
+                );
+                array_push($prices, $item);
+                $rows--;
+            }
+            mysql_free_result($result);
+        }
+        
+        $json = json_encode($prices);
+        echo $json;
     }
     
     // 
@@ -573,6 +606,6 @@ class Part
 
 //$test = new Part();
 //$test->search('4BD1-大瓦标准','3');  
-//$test->get_taiho();
+//$test->get_sale_prices(2,232);
 
 ?>

@@ -6,10 +6,14 @@
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="sale.css" media="all">
 <link rel="stylesheet" type="text/css" href="script/jquery.autocomplete.css">
+<link rel="stylesheet" type="text/css" href="script/common.float.css" />
+<link rel="stylesheet" type="text/css" href="script/jquery.float.css" />
+<link rel="stylesheet" type="text/css" href="float.css" />
 <script type="text/javascript" src="script/jquery-1.5.1.js"></script>
 <script type="text/javascript" src="script/jquery.json-2.3.js"></script>
 <script type='text/javascript' src='script/jquery.ajaxQueue.js'></script>
 <script type='text/javascript' src='script/jquery.autocomplete.js'></script>
+<script type="text/javascript" src="script/jquery.float.js"></script>
 <script type="text/javascript" src="script/wanet.bill.js"></script>
 <script type='text/javascript' src='script/wanet.taiho.js'></script>
 </head>
@@ -136,6 +140,17 @@
         </div>
       </div>         
     </form>
+  </div>
+  <div id="mprice" style="display: none; position: absolute; width: 135px; top: 198px; left: 361px;" class="ac_results">
+    <ul style="max-height: 350px; overflow: auto;">
+      <!--li class="ac_even"><span class="key2">2012-12-02</span><span class="key1">￥200.0</span></li>
+      <li class="ac_even"><span class="key2">2012-09-31</span><span class="key1">￥20.0</span></li>
+      <li class="ac_even"><span class="key2">2012-03-02</span><span class="key1">￥30.0</span></li>
+      <li class="ac_even"><span class="key2">2012-08-23</span><span class="key1">￥250.0</span></li>
+      <li class="ac_even"><span class="key2">2012-06-23</span><span class="key1">￥400.0</span></li>
+      <li class="ac_even"><span class="key2">2012-02-14</span><span class="key1">￥22.0</span></li>
+      <li class="ac_even"><span class="key2">2012-05-15</span><span class="key1">￥300.0</span></li-->
+    </ul>
   </div>
   <div id="footer">
   <p style="padding: 5px 0pt 10px;"> 

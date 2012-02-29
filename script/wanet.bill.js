@@ -190,6 +190,7 @@ function get_bill_fields(warehouse) {
     ajax_swap();
 }
 
+
 function set_bill_datetime() {
     var now = new Date();
     var year;
@@ -261,6 +262,8 @@ function check_inputs(tr) {
     var sum = (price *  quantity).toFixed(2) ;
     $(inputs[6]).attr("value",sum);
     
+    // calculate the price totals
+    salesum();
     return true;
 }
 
@@ -306,10 +309,6 @@ function savebill(){
         var warehouse = 'general';
         get_bill_fields(warehouse);
     }
-}
-
-function test_com(){
-    alert('test');
 }
 
 function warehouse(){
@@ -379,6 +378,10 @@ function salesum(){
     return true;
 }
 
+function test_submit(){
+    alert('test');
+}
+
 $(document).ready(function () {
     // set the sale bill number and date time
     set_bill_datetime();
@@ -392,7 +395,6 @@ $(document).ready(function () {
     }
     // init the bill's table inputs
     init_bill_table(rows);
-
 
     // put the get values to input fields
     init_bill_ifetch();

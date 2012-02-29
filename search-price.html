@@ -8,6 +8,43 @@
 <link rel="stylesheet" type="text/css" href="script/jquery.float.css" />
 <link rel="stylesheet" type="text/css" href="float.css" />
 </head>
+<script type="text/javascript" src="script/jquery-1.5.1.js"></script>
+<script type="text/javascript" src="script/jquery.float.js"></script>
+<script>
+$(function() {
+    $(".ac_even").bind('mouseover',function()
+    {
+        $(this).addClass("ac_over");
+    }).bind('mouseleave',function()
+    {
+        $(this).removeClass("ac_over");
+    });	
+    
+
+    $(".ac_even").click(function(){
+        var $price = $(this).find(".key1");
+        alert($price.html());
+        $("#mprice").hide();
+        return false;
+    });
+
+	//target参数加载
+	$("#trigger1").powerFloat({
+        width: 145,
+		target: $("#p2")	
+	});
+    
+    $("#trigger2").click(function(){
+        //$("#p2").hide();
+        var menu = '<li class="ac_even"><span class="key2">2012-12-02</span><span class="key1">￥200.0</span></li>';
+        $("#p2 ul").empty();
+        $("#p2 ul").html(menu);
+        return false;
+    });
+    
+    
+});
+</script>
 <body>
 <div class="zxx_out_box">
     <div class="zxx_in_box">
@@ -15,6 +52,7 @@
 			<div class="zxx_test_list">
             	<h4 class="mb10 f11">一、加载页面上元素</h4>
                 <p><a id="trigger1" href="javascript:;" rel="targetBox">默认rel加载</a></p>
+                <p><a id="trigger2" href="#">加载html</a></p>
             </div>
         </div>
     </div>
@@ -47,34 +85,7 @@
   </div>
 </div>
 
-<script type="text/javascript" src="script/jquery-1.5.1.js"></script>
-<script type="text/javascript" src="script/jquery.float.js"></script>
-<script>
-$(function() {
-    $(".ac_even").bind('mouseover',function()
-    {
-        $(this).addClass("ac_over");
-    }).bind('mouseleave',function()
-    {
-        $(this).removeClass("ac_over");
-    });	
-    
 
-    $(".ac_even").click(function(){
-        //$("#querypart").attr("value",this.text);
-        //alert('aaaaa');
-        //$.powerFloat.hide();
-        $("#p2").hide();
-        return false;
-    });
-
-	//target参数加载
-	$("#trigger1").powerFloat({
-        width: 145,
-		target: $("#p2")	
-	});
-});
-</script>
 
 </body>
 </html>
