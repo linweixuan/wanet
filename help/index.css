@@ -1,0 +1,41 @@
+/* ::::: file:///D:/WebScrap/data/20110926161523/index.css ::::: */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, textarea { margin: 0pt; padding: 0pt; font-size: 12px; font-family: arial,"宋体"; }
+ul, li, dl, dt, dd { list-style: none outside none; }
+.clearfix:after { content: "."; display: block; height: 0pt; clear: both; visibility: hidden; }
+:first-child + html .clearfix {  }
+.float_left { float: left; }
+.float_right { float: right; }
+a { text-decoration: none; }
+a:focus { outline: medium none; }
+a { color: rgb(60, 121, 242); }
+a:hover { color: rgb(244, 118, 1); }
+.mt10 { margin-top: 10px; }
+.docLayout {
+	width: 1000px;
+	margin: 0pt auto;
+}
+.docHeadLogo, .docHeadNav li, .docHeadCon_L, .docHeadCon_R, .docHeadInput span, .docHeadButton input, .docModTop_L, .docModTop_R, .docModBot_L, .docModBot_R, .docLogin a, .docLogin_up a, .docHotTit span.item1, .docHotTit span.item3, .docHotBot span, .docClaTit span.item1, .docClaTit span.item3, .docClaSubIcon, .docSerch_M span a, .docSerRankTit, .docNoDocCon span, .DocScanTopR a, .docSComTop p input, .docSComNoreg a, .USDateInput, .USDateButton, .docUpRSta p, .docUpRBtn a, .docUpBtn input, .docUpSuc p, .docUpSucBtn a, .cat_select_container .select_done_button, .docUpRBtn input { background-image: url('bgicon.png'); background-repeat: no-repeat; background-color: transparent; }
+.docHeadCon_M, .docHeadInput, .docHotCon, .docClaTit span.item2, .docQueTitList h2, .docHotConSer, .docHotConNo, .DocScanLink span.item3 a, .USMesTit h2 { background-image: url('bgbox.png'); background-repeat: repeat-x; background-color: transparent; }
+.docClaTit span { display: block; height: 32px; }
+.docClaTit span.item1 { background-position: -228px -118px; width: 5px; }
+.docClaTit span.item2 { background-position: 0px -264px; }
+.docClaTit span.item3 { background-position: -234px -118px; width: 5px; }
+.docClaTit span.item2 h2 { color: rgb(51, 51, 51); text-align: left; margin-left: 5px; }
+.docClaTit span.item2 h2, .docClaTit span.item2 span { font-size: 14px; font-weight: bold; line-height: 32px; }
+.docSort { border-width: 0pt 1px; border-style: solid; border-color: rgb(233, 220, 168); padding: 5px 1px; }
+.docSerRoad { color: rgb(102, 102, 102); height: 24px; line-height: 24px; }
+.docSerRoad a { color: rgb(238, 119, 21); }
+.docSerRoad a:hover { text-decoration: underline; }
+.docHelpSide { width: 260px; border-bottom: 1px solid rgb(233, 220, 168); }
+.docHelpMain {
+	width: 720px;
+}
+.docHelpSide .docClaTit span.item2 { width: 250px; }
+.docSort {  }
+.docHelpList li {  }
+.docHelpList li a { display: block; color: rgb(51, 51, 51); background-image: url('iconall.gif'); background-repeat: no-repeat; background-position: -210px -198px; background-color: rgb(255, 255, 255); padding: 5px 10px 5px 20px; }
+.docHelpList li a:hover, .docHelpList li a.docHelpSelected { background-position: -210px -216px; background-color: rgb(250, 243, 223); color: rgb(253, 120, 2); font-weight: bold; }
+.docHelpCon { border: 1px solid rgb(239, 229, 191); padding: 15px; color: rgb(102, 102, 102); margin-top: 5px; border-radius: 4px 4px 4px 4px; height: auto ! important; min-height: 500px; }
+.docHelpCon h3 { color: rgb(51, 51, 51); font-size: 14px; }
+.docHelpCon p { line-height: 24px; font-size: 14px; margin-top: 10px; }
