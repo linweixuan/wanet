@@ -1,0 +1,4 @@
+SELECT id, name FROM company WHERE abbr LIKE '%gf%' OR pinyin LIKE '%gf%' OR name LIKE '%gf%' LIMIT 5========+++=========
+SELECT id, name FROM company WHERE abbr LIKE '%m%' OR pinyin LIKE '%m%' OR name LIKE '%m%' LIMIT 5========+++=========
+SELECT id, name FROM company WHERE abbr LIKE '%m%' OR pinyin LIKE '%m%' OR name LIKE '%m%' LIMIT 5========+++=========
+SELECT id, name FROM company WHERE abbr LIKE '%g%' OR pinyin LIKE '%g%' OR name LIKE '%g%' LIMIT 5========+++=========

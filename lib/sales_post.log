@@ -1,0 +1,28 @@
+Array
+(
+    [id] => 
+    [companyid] => 2
+    [company] => 武汉广福工程机械23
+    [address] => 武汉天河东圃珠村
+    [parts] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => 4BD1-大瓦标准
+                    [code] => 
+                    [unit] => 套
+                    [price] => 128.00
+                    [quantity] => 1
+                    [memo] => 
+                )
+
+        )
+
+    [num] => C222046276243581
+    [book] => 
+    [sheet] => 
+    [operator] => 
+    [date] => 2012年2月22日 17:57
+    [total] => 128.00
+)

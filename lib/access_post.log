@@ -1,0 +1,9 @@
+Array
+(
+    [id] => 4
+    [account] => lwx
+    [page] => buy
+    [module] => buy
+    [func] => all
+    [permit] => 1
+)

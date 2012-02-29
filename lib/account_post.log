@@ -1,0 +1,20 @@
+Array
+(
+    [id] => 42
+    [name] => sale
+    [fullname] => 销售庄户
+    [passwd] => sale
+    [role] => 销售
+    [phone] => 4564564
+    [address] => 杭州市上城区鸿润挖机齿轮行位于杭州市上城区
+    [email] => welin@CROSSBEAMSYS.COM
+    [qq] => 238522828
+    [token] => 
+    [province] => 
+    [city] => 
+    [code] => 
+    [msn] => 
+    [type] => 0
+    [level] => 0
+    [other] => 
+)

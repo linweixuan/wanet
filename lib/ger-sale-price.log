@@ -1,0 +1,1 @@
+ select price from sales where part = 242 and company = 3 and type<> 1 order by date desc limit 0,1

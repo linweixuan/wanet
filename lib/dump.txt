@@ -1,0 +1,19 @@
+Array
+(
+    [account] => wer
+    [passwd] => 123456
+    [confirm] => 123456
+    [token] => 8901
+    [name] => 光谷工
+    [phone] => 020-23438923
+    [mobile] => 124452234353
+    [fax] => 020-23562232
+    [address] => 杭州市上城区鸿润挖机齿轮行位于杭州市上城区
+    [postcode] => 5104600
+    [province] => 重庆
+    [email] => welin@CROSSBEAMSYS.COM
+    [qq] => 238522828
+    [msn] => linwewerwer@hiotmail.com
+    [company] => 武汉光谷工程机型设备有限公司
+    [business] => 杭州市上城区鸿润挖机齿轮行位于杭州市上城区
+)
