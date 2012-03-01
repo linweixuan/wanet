@@ -1,0 +1,49 @@
+/* ::::: file:///F:/WebScrap/data/20120228225500/index.css ::::: */
+
+* { word-wrap: break-word; }
+body { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+body, input, button, select, textarea { font: 12px/1.5 Arial; color: rgb(51, 51, 51); }
+body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, .pr, .pc { margin: 0pt; padding: 0pt; }
+table { empty-cells: show; border-collapse: collapse; }
+a { color: rgb(51, 51, 51); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.cl:after { content: "."; display: block; height: 0pt; clear: both; visibility: hidden; }
+.cl {  }
+.xs2 { font-size: 14px ! important; }
+.xg1, .xg1 a { color: rgb(153, 153, 153) ! important; }
+.xi2, .xi2 a, .xi3 a { color: rgb(51, 102, 153); }
+.xw1 { font-weight: 700; }
+#ajaxwaitid { display: none; position: absolute; right: 0pt; top: 0pt; z-index: 1; padding: 0pt 5px; background: none repeat scroll 0% 0% rgb(221, 0, 0); color: rgb(255, 255, 255); }
+.showmenu { padding-right: 16px; background: url('arrwd.gif') no-repeat scroll 100% 50% transparent; cursor: pointer; white-space: nowrap; }
+button::-moz-focus-inner { border: 0pt none; padding: 0pt; }
+.pn { vertical-align: middle; overflow: hidden; margin-right: 3px; padding: 0pt; height: 23px; border: 1px solid rgb(153, 153, 153); background: url('pn.png') repeat-x scroll 0pt 0pt rgb(229, 229, 229); cursor: pointer; box-shadow: 0pt 1px 0pt rgb(229, 229, 229); }
+.pn:active { background-position: 0pt -23px; }
+.pn em, .pn span, .pn strong { padding: 0pt 10px; line-height: 21px; }
+.pn em, .pn strong { font-weight: 700; }
+.pnc, a.pnc { border-color: rgb(35, 89, 148); background-color: rgb(0, 102, 204); background-position: 0pt -48px; color: rgb(255, 255, 255) ! important; }
+.pnc:active { background-position: 0pt -71px; }
+.wp {
+	width: 730px;
+	margin-top: 0pt;
+	margin-right: auto;
+	margin-bottom: 0pt;
+	margin-left: auto;
+	padding-bottom: 10px;
+}
+#hd { border-bottom: 0pt solid rgb(194, 213, 227); }
+#scbar { height: 44px; border-style: solid; border-color: rgb(229, 237, 242); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none; border-width: 0pt 1px 1px; background: url('search.png') repeat-x scroll 0pt 0pt transparent; line-height: 44px; overflow: hidden; }
+.scbar_icon_td { width: 50px; background: url('search.png') no-repeat scroll 0pt -74px transparent; }
+.scbar_txt_td, .scbar_type_td { background: url('search.png') repeat-x scroll 0pt -222px transparent; }
+#scbar_txt {
+	width: 150px;
+	border: 1px solid rgb(255, 255, 255);
+	outline: medium none;
+	font-size: 14px;
+}
+.scbar_btn_td { width: 67px; background: url('search.png') no-repeat scroll 0pt -296px transparent; text-align: center; }
+#scbar_btn { margin: 0pt; padding: 0pt; border: medium none; background: none repeat scroll 0% 0% transparent; }
+.scbar_type_td { background: url('search.png') no-repeat scroll 0pt -370px transparent; }
+#scbar_type { display: block; padding-left: 5px; text-align: left; text-decoration: none; }
+#scbar_hot { padding-left: 8px; height: 45px; overflow: hidden; }
+#scbar_hot strong, #scbar_hot a { float: left; margin-right: 8px; white-space: nowrap; }
+#mu { position: relative; z-index: 1; }
