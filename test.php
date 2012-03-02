@@ -1,1 +1,4 @@
- <?php  echo  phpinfo();  ?>
+ <?php 
+    $page = $_SERVER['PHP_SELF'];
+    echo $page;
+ ?>

@@ -1,9 +1,9 @@
 Array
 (
     [id] => 
-    [companyid] => 3
-    [company] => 郑州广福工程机械
-    [address] => 郑州1
+    [companyid] => 2
+    [company] => 武汉广福工程机械23
+    [address] => 武汉天河东圃珠村
     [parts] => Array
         (
             [0] => Array
@@ -14,16 +14,16 @@ Array
                     [unit] => 套
                     [price] => 128.00
                     [quantity] => 1
-                    [memo] => wuhan
+                    [memo] => 
                 )
 
         )
 
-    [num] => C228118773925943
+    [num] => C302539546805761
     [book] => 
     [sheet] => 
     [operator] => 
-    [date] => 2012年2月28日 14:51
+    [date] => 2012年3月2日 10:5
     [total] => 128.00
     [type] => sale
     [warehouse] => sub
