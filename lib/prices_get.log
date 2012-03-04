@@ -1,5 +1,9 @@
 Array
 (
-    [part] => 331
-    [company] => 2
+    [part] => 232
+    [company] => 14
+    [PHPSESSID] => r5in6li7do0ho1fv2cp1tqbei1
+    [userid] => 39
+    [username] => admin
+    [ZDEDebuggerPresent] => php,phtml,php3
 )

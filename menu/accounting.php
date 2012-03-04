@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="base.css" media="all">
 <script type="text/javascript" src="../script/jquery-1.5.1.js"></script>
-<script type="text/javascript" src="../script/wanet.navifrm.js"></script>
+<!--script type="text/javascript" src="../script/wanet.navifrm.js"></script-->
 <title>广福工程机械设备有限公司</title>
 </head>
 <body>
@@ -19,29 +19,29 @@
           <div class="line">
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/company.html" title="客户资料"> 
-                <img src="../images/cycle.jpeg" class="image2"></a>
+                <a class="img" href="index.php" title="通信费用"> 
+                <img src="../images/phone4.jpeg" class="image2"></a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/company.html">客户资料</a>
+                <a href="index.php">通信费用</a>
               </div>                
             </div>
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="company.php" title="添加客户"> 
-                <img src="../images/cash1.jpeg" width="78" height="74" class="image2"> </a>
+                <a class="img" href="index.php" title="租金费用"> 
+                <img src="../images/rent.jpeg" width="40" height="40" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="company.php">添加客户</a>
+                <a href="index.php">租金费用</a>
               </div>                
             </div>           
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/company.html" title="客户关系"> 
-                <img src="../images/repart.jpeg" class="image2"> </a>
+                <a class="img" href="index.php" title="员工工资"> 
+                <img src="../images/yuan2.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/company.html">客户关系</a>
+                <a href="index.php">员工工资</a>
               </div>                
             </div>
           </div>
@@ -50,29 +50,29 @@
           <div class="line">
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="部件资料"> 
-                <img src="../images/sheet.jpeg" class="image2"> </a>
+                <a class="img" href="index.php" title="办公文具"> 
+                <img src="../images/stationery.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">部件资料</a>
+                <a href="index.php">办公文具</a>
               </div>                
             </div>
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="part.php" title="添加部件"> 
-                <img src="../images/book.jpeg" width="84" height="75" class="image2"> </a>
+                <a class="img" href="index.php" title="交通费用"> 
+                <img src="../images/trafic.jpeg" width="73" height="65" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="part.php">添加部件</a>
+                <a href="index.php">交通费用</a>
               </div>                
             </div>           
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="部件库存"> 
-                <img src="../images/statistic.jpeg" width="88" height="79" class="image2"> </a>
+                <a class="img" href="index.php" title="其他费用"> 
+                <img src="../images/cash1.jpeg" width="74" height="65" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">部件库存</a>
+                <a href="index.php">其他费用</a>
               </div>                
             </div>
           </div>

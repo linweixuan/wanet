@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="base.css" media="all">
 <script type="text/javascript" src="../script/jquery-1.5.1.js"></script>
-<script type="text/javascript" src="../script/wanet.navifrm.js"></script>
+<!--script type="text/javascript" src="../script/wanet.navifrm.js"></script-->
 <title>广福工程机械设备有限公司</title>
 </head>
 <body>
@@ -19,29 +19,29 @@
           <div class="line">
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="buy.php" title="采购盘点"> 
+                <a class="img" href="index.php" title="采购盘点"> 
                 <img src="../images/inlib.jpeg" class="image2"></a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="buy.php">采购盘点</a>
+                <a href="index.php">采购盘点</a>
               </div>                
             </div>
             <div class="unit size1of2">
               <div class="media mediaVertical center">
-                <a class="img" href="buy.php" title="入库盘点"> 
-                <img src="../images/bearing18.jpeg" class="image2"> </a>
+                <a class="img" href="index.php" title="入库盘点"> 
+                <img src="../images/list21.jpeg" width="67" height="65" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="buy.php">入库盘点</a>
+                <a href="index.php">入库盘点</a>
               </div>                
             </div>           
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center"> 
-                <a class="img" href="buy.php" title="销售盘点"> 
-                <img src="../images/tp1.jpeg" class="image2"> </a>
+                <a class="img" href="index.php" title="销售盘点"> 
+                <img src="../images/list19.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="buy.php">销售盘点</a>
+                <a href="index.php">销售盘点</a>
               </div>                
             </div>
           </div>
@@ -59,20 +59,20 @@
             </div>
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="瓦TP销售统计"> 
+                <a class="img" href="index.php" title="瓦TP销售统计"> 
                 <img src="../images/sheet1.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">瓦TP销售统计</a>
+                <a href="index.php">瓦TP销售统计</a>
               </div>                
             </div>           
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="客户统计"> 
+                <a class="img" href="index.php" title="客户统计"> 
                 <img src="../images/bill2.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">客户统计</a>
+                <a href="index.php">客户统计</a>
               </div>                
             </div>
           </div>

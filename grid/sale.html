@@ -5,6 +5,7 @@
 <title>Grid Test</title>
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" type="text/css" href="sale.css" media="all">
+<link rel="stylesheet" type="text/css" href="search1.css" media="all">
 <link rel="stylesheet" type="text/css" media="screen" href="themes/redmond/jquery-ui-1.8.2.custom.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.jqgrid.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.multiselect.css" />
@@ -17,10 +18,11 @@
 <script src="js/jquery.tablednd.js" type="text/javascript"></script>
 <script src="js/jquery.contextmenu.js" type="text/javascript"></script>
 <script src="js/ui.multiselect.js" type="text/javascript"></script>
+<script src="js/jquery.watermark.js" type="text/javascript"></script>
 
 </head>
 <body>
-<div class="history">          
+<div class="history">
   <div class="icon">
   	<img src="images/gf5.jpeg" width="76" height="67" />
   </div>  
@@ -41,9 +43,28 @@
         <a id="m10" href="10">10月</a>
         <a id="m11" href="11">11月</a>
         <a id="m12" href="12">12月</a>
-    </div>
-  </div>
+    </div>         
+  </div>  
 </div>
+
+<div id="open-search" class="open-search clearfix">
+  <div id="fieldset">
+	<form id="oos" name="oos" method="post" action="#">
+      <div class="search-input">
+        <input value="客户..." style="color: rgb(136, 136, 136);" id="company" name="company" class="input-text" type="text">
+        <input value="部件..." style="color: rgb(136, 136, 136);" id="part" name="part" class="input-text" type="text">
+        <input value="单号..." style="color: rgb(136, 136, 136);" id="billno" name="billno" class="input-text" type="text">
+        <input value="价格..." style="color: rgb(136, 136, 136);" id="price" name="price" class="input-text" type="text">
+        <input value="时间..." style="color: rgb(136, 136, 136);" id="date" name="date" class="input-text" type="text">
+        <div class="search-submit"> 
+          <a href="#nogo" onclick="adsearch();" stats="home_searchfriend">&nbsp;</a> 
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="description"> <a class="find-friends" href="#" stats="home_findfriendreg"></a> </div>  
+</div>
+
 <div id="wrap">
     <table id="tblobj"></table> <div id="tblpage"></div> <br /> 
     <input type="button" id="rowedit" value="编辑" style="display:none"/> 
@@ -51,6 +72,7 @@
     <input type="button" id="rowcancel" disabled='true' value="取消" style="display:none"/>
     <input type="button" id="rowdelete" value="删除" style="display:none" />
     <script src="sale.tbl.js" type="text/javascript"></script>
+    <script src="../script/wanet.adsearch.js" type="text/javascript"></script>
 </div>    
 </body>
 </html>

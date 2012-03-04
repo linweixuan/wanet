@@ -1,5 +1,9 @@
 Array
 (
     [oper] => del
-    [id] => 1
+    [id] => 114
+    [PHPSESSID] => r5in6li7do0ho1fv2cp1tqbei1
+    [userid] => 39
+    [username] => admin
+    [ZDEDebuggerPresent] => php,phtml,php3
 )

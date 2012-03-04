@@ -1,0 +1,71 @@
+
+input, textarea, select {
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: inherit;
+}
+input, textarea, select {
+}
+.cf {
+}
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0pt;
+	overflow: hidden;
+	visibility: hidden;
+}
+input.formbutton {
+	padding: 4px 1em;
+	border-width: 2px;
+	border-style: solid;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-image: none;
+	border-color: rgb(130, 208, 212) rgb(77, 152, 155) rgb(84, 163, 167) rgb(146, 214, 217);
+	background: none repeat scroll 0% 0% rgb(99, 197, 200);
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.1em;
+	cursor: pointer;
+}
+#bdw {
+	height: auto ! important;
+	min-height: 500px;
+	background: url('bg-alt.png') repeat-x scroll 0% 0% rgb(203, 238, 244);
+	border-top: 1px solid rgb(212, 236, 236);
+}
+#bd {
+	position: relative;
+	z-index: 1;
+	width: 960px;
+	margin: 0pt auto;
+	padding: 24px 0pt 65px;
+}
+.allcities .index-choosecities {
+	border: 2px solid rgb(137, 180, 212);
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	padding: 18px 24px;
+}
+.allcities h2 {
+	font-size: 16px;
+	display: inline;
+}
+.allcities .filter {
+	border-top: 1px solid rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
+	margin: 16px 0pt;
+	padding: 16px 0pt;
+}
+.allcities .filter form {
+	display: inline;
+}
+.allcities .filter select {
+	margin-left: 6px;
+}
+.allcities .filter input {
+	padding: 0pt 12px;
+	cursor: pointer;
+}

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="base.css" media="all">
 <script type="text/javascript" src="../script/jquery-1.5.1.js"></script>
-<script type="text/javascript" src="../script/wanet.navifrm.js"></script>
+<!--script type="text/javascript" src="../script/wanet.navifrm.js"></script-->
 <title>广福工程机械设备有限公司</title>
 </head>
 <body>
@@ -19,29 +19,29 @@
           <div class="line">
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/company.html" title="客户资料"> 
-                <img src="../images/client.jpeg" class="image2"></a>
+                <a class="img" href="index.php" title="应收款"> 
+                <img src="../images/receivable.jpeg" width="75" height="67" class="image2"></a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/company.html">客户资料</a> 
+                <a href="index.php">应收款</a> 
               </div>              
             </div>
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="company.php" title="添加客户"> 
-                <img src="../images/icon_add_user.png" width="74" height="69" class="image2"> </a>
+                <a class="img" href="index.php" title="应付款"> 
+                <img src="../images/give.jpeg" width="64" height="64" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="company.php">添加客户</a>
+                <a href="index.php">应付款</a>
               </div>                            
             </div>           
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/company.html" title="客户关系"> 
-                <img src="../images/crm.png" class="image2"> </a>
+                <a class="img" href="index.php" title="对冲"> 
+                <img src="../images/receiable1.jpeg" width="76" height="69" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/company.html">客户关系</a>
+                <a href="index.php">对冲</a>
               </div>                            
             </div>
           </div>
@@ -50,29 +50,29 @@
           <div class="line">
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="部件资料"> 
-                <img src="../images/pats.jpeg" class="image2"> </a>
+                <a class="img" href="index.php" title="应收查询"> 
+                <img src="../images/findall.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">部件资料</a>
+                <a href="index.php">应收查询</a>
               </div>                            
             </div>
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
-                <a class="img" href="part.php" title="添加部件"> 
-                <img src="../images/parts.png" class="image2"> </a>
+                <a class="img" href="index.php" title="应付查询"> 
+                <img src="../images/findlist.jpeg" width="52" height="55" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="part.php">添加部件</a> 
+                <a href="index.php">应付查询</a> 
               </div>                            
             </div>           
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="部件库存"> 
-                <img src="../images/boxs.jpeg" width="80" height="62" class="image2"> </a>
+                <a class="img" href="index.php" title="对冲查询"> 
+                <img src="../images/finding1.jpeg" width="50" height="50" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">部件库存</a>
+                <a href="index.php">对冲查询</a>
               </div>                            
             </div>
           </div>

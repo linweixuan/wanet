@@ -36,6 +36,16 @@ class Access
         
     }
     
+    public static function instance()
+    {
+        static $god;
+        if (is_object($god) == true) {        	
+            return $god;
+        }
+        $god = new Access;
+        return $god;
+    }
+    
     function parse($post)
     {   
         // Trim all the incoming data
@@ -264,6 +274,26 @@ class Access
         return $result; 
     }	
            
+    function check()
+    {
+        // get current accessing page
+        $permit = '0';
+        $page = $_SERVER['PHP_SELF'];
+        $user = $_SESSION["username"];
+        
+        $db = GLOBALDB();
+        $sql = sprintf('select permit from access where account="%s" and page="%s"',$user, $page);
+        if ($result = $db->query($sql)) {
+            if (mysql_num_rows($result)) {
+                $permit = $row['permit'];
+            }
+            mysql_free_result($result);
+        }
+        
+        // check if the user have the right
+        return ($permit == '0');
+    }
+
     function test()
     {
         $data = file_get_contents("access_post.dat");
@@ -281,7 +311,6 @@ class Access
     }
     
 }// end of class
-
 
 //$obj = new Access();
 //$obj->test();  

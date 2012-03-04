@@ -38,7 +38,7 @@
             <div class="unit size1of2 unitLast">
               <div class="media mediaVertical center">
                 <a class="img" href="../entry.php" title="TP环入库">
-                <img src="../images/tp1.jpeg" class="image2"> </a>
+                <img src="../images/list27.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
                 <a href="../entry.php">采购入库盘点</a>
@@ -51,7 +51,7 @@
             <div class="unit size1of2">
               <div class="media mediaVertical center"> 
                 <a class="img" href="grid/buy.html" title="采购单查询">
-                <img src="../images/bill.jpeg" class="image2"> </a>
+                <img src="../images/list13.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
                 <a href="grid/buy.html">采购单查询</a>
@@ -60,7 +60,7 @@
             <div class="unit size1of2">
               <div class="media mediaVertical center">
                 <a class="img" href="grid/entry.html" title="入库单查询">
-                <img src="../images/sheet1.jpeg" class="image2"> </a>
+                <img src="../images/list23.jpeg" class="image2"> </a>
               </div>
               <div class="menuname bd bold textCenter"> 
                 <a href="grid/entry.html">入库单查询</a>

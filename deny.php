@@ -42,7 +42,7 @@
 <div class="content">
   <div class="box_w">
     <div class="box">
-    <iframe name="help" id="help" src="help/index.html" frameborder="1" scrolling="no" onLoad="autoFrameHeightId(help)" >
+    <iframe name="help" id="help" src="./deny.html" frameborder="1" scrolling="no" onLoad="autoFrameHeightId(help)" >
     Your browser doesn't support iframes.</iframe>
     </div>
   </div>

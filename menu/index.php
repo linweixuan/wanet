@@ -16,66 +16,9 @@
     <div class="bd">
       <ul>
         <li class="marginTop2">
-          <div class="line">
-            <div class="unit size1of2">
-              <div class="media mediaVertical center"> 
-                <a class="img" href="grid/company.html" title="客户资料"> 
-                <img src="../images/client.jpeg" class="image2"></a>
-              </div>
-              <div class="menuname bd bold textCenter"> 
-                <a href="grid/company.html">客户资料</a> 
-              </div>              
-            </div>
-            <div class="unit size1of2">
-              <div class="media mediaVertical center"> 
-                <a class="img" href="company.php" title="添加客户"> 
-                <img src="../images/icon_add_user.png" width="74" height="69" class="image2"> </a>
-              </div>
-              <div class="menuname bd bold textCenter"> 
-                <a href="company.php">添加客户</a>
-              </div>                            
-            </div>           
-            <div class="unit size1of2 unitLast">
-              <div class="media mediaVertical center"> 
-                <a class="img" href="grid/company.html" title="客户关系"> 
-                <img src="../images/crm.png" class="image2"> </a>
-              </div>
-              <div class="menuname bd bold textCenter"> 
-                <a href="grid/company.html">客户关系</a>
-              </div>                            
-            </div>
-          </div>
+            正在建设中......
         </li>
         <li class="marginTop2">
-          <div class="line">
-            <div class="unit size1of2">
-              <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="部件资料"> 
-                <img src="../images/pats.jpeg" class="image2"> </a>
-              </div>
-              <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">部件资料</a>
-              </div>                            
-            </div>
-            <div class="unit size1of2">
-              <div class="media mediaVertical center"> 
-                <a class="img" href="part.php" title="添加部件"> 
-                <img src="../images/parts.png" class="image2"> </a>
-              </div>
-              <div class="menuname bd bold textCenter"> 
-                <a href="part.php">添加部件</a> 
-              </div>                            
-            </div>           
-            <div class="unit size1of2 unitLast">
-              <div class="media mediaVertical center"> 
-                <a class="img" href="grid/part.html" title="部件库存"> 
-                <img src="../images/boxs.jpeg" width="80" height="62" class="image2"> </a>
-              </div>
-              <div class="menuname bd bold textCenter"> 
-                <a href="grid/part.html">部件库存</a>
-              </div>                            
-            </div>
-          </div>
         </li>  
       </ul>
     </div>

@@ -31,7 +31,7 @@ function set_datetime_active()
     $(select).addClass("active");
     
     // make the request url  string
-    select_query = 'sale.tbl.php?year='+year+'&month='+month;    
+    select_query = 'sale.tbl.php?year='+year+'&month='+month;
     select_year = year;
     select_month = month;
 
@@ -104,12 +104,12 @@ $(document).ready(function () {
         colModel:[
             {name:'id',index:'id', width:40},
             {name:'name',index:'name', width:200, editable:true},
-        //       {name:'operator',index:'operator', width:100,editable:true},
             {name:'num',index:'num', width:130,editable:true},
         //	{name:'book',index:'book', width:100,editable:true},
         //	{name:'sheet',index:'sheet', width:100,editable:true},        
             {name:'total',index:'total', width:70, align:"right",editable:true},   		
             {name:'date',index:'date', width:150, align:"right",editable:true},		
+        //  {name:'operator',index:'operator', width:100,editable:true},            
             {name:'memo',index:'memo', width:110, align:"center",editable:true}   
         ],
         rowNum:20,

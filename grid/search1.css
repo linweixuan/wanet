@@ -1,0 +1,83 @@
+input, select {
+	vertical-align: middle;
+}
+.input-text {
+	border: 1px solid rgb(189, 199, 219);
+	padding: 3px;
+}
+img {
+	border: 0pt none;
+}
+.clearfix {
+}
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+.open-search .search-submit a {
+	background-image: url('login-new2.png');
+}
+.open-search {
+	background-color: #FFF;
+	border: 0px solid #000;
+	width: 733px;
+	padding-top: 5px;
+	padding-right: 1px;
+	padding-bottom: 10px;
+	padding-left: 7px;
+	height: 20px;
+	position:relative;
+	float: left;
+	background-image: url("./themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png");
+}
+
+.open-search .search-input {
+	overflow: hidden;
+	width: 750px;
+}
+.open-search .search-input .input-text {
+	padding: 5px 3px 4px;
+}
+.open-search .search-submit {
+	float: left;
+	width: 23px;
+}
+.open-search .search-input .input-text {
+	background-position: 0pt -170px;
+	background-repeat: no-repeat;
+	border: 1px solid rgb(189, 199, 216);
+	float: left;
+	margin-right: 2px;
+	width: 131px;
+}
+.open-search .search-submit a {
+	background-color: rgb(230, 230, 230);
+	background-position: -437px -179px;
+	border: 1px solid rgb(139, 139, 139);
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	width: 23px;
+	height: 23px;
+}
+.open-search .description {
+	display: block;
+	margin-top: 10px;
+}
+.open-search .description .find-friends {
+	padding-right: 10px;
+	font-size: 12px;
+	background-repeat: no-repeat;
+	background-position: -242px -70px;
+	color: rgb(136, 136, 136);
+}
+input, select, textarea {
+	font-size: 12px;
+	font-family: Tahoma, Verdana, sans-serif, simsun;
+}
+
+ul {
+	list-style: none outside none;
+}
